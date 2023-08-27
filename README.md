@@ -1,6 +1,7 @@
 # sql-challenge
 
 1. Data Modeling
+
 departments
 -
 dept_no PK VARCHAR   
@@ -37,7 +38,10 @@ salaries
 emp_no INT  FK >- employees.emp_no 
 salary INT  
 
+
 2. Data Engineering
+
+
 CREATE TABLE departments (
     dept_no VARCHAR   NOT NULL,
     dept_name VARCHAR   NOT NULL,
@@ -80,7 +84,10 @@ CREATE TABLE "salaries" (
     "salary" INT   NOT NULL
 );
 
+
 3. Data Analysis
+
+
 -- 1. List the employee number,last name, first name, sex, and salary of each employee.
 SELECT employees.emp_no, employees.last_name, employees.first_name, employees.sex, salaries.salary
 FROM employees
